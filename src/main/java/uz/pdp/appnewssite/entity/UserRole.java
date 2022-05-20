@@ -24,7 +24,9 @@ public class UserRole extends BaseEntity {
     private String name;
 
 
-
+    @Enumerated(value = EnumType.STRING)
     @ElementCollection
     private List<Permission> permissions;
+
+    private String description;
 }
